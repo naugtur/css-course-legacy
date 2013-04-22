@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tagz</title>
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+	<style>
+	body {
+		background-color: #222;
+		color: #fff;
+		font-family: sans-serif;
+		font-size: 14px;
+	}
+
+	* {
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	.bunch{
+		padding:10px;
+		margin: 10px;
+		width: 900px;
+	}
+	.tag{
+		padding: 20px 0 20px 10px;
+
+		width: 100%;
+		overflow: auto;
+		clear:both;
+		margin: 40px 10px;
+		color: #000;
+
+		background: #eee; 
+
+	}
+
+	.tag>*:not(pre){
+		background-color: #afa;
+	}
+	.tag>pre{
+		padding:10px;
+		float:right;
+		position: relative;
+		top: -30px;
+		background-color: #222;
+		color: #fff;
+		width: 75%;
+		margin:0;
+		border-bottom: 1px dashed #fff;
+		border-left: 1px dashed #fff;
+	}
+	</style>
+</head>
+<body>
+
+
+	<h2>Basic text elements</h2>
+	<div class="bunch">
+		<a href="http://somewhere">go somewhere</a>
+		<strong>strong important text</strong>
+		<em>emphasis on text</em>
+		<p>paragraph block</p>
+		<ul>
+			<li>listItem in unordered list</li>
+		</ul>
+		<ol>
+			<li>listItem in ordered list</li>
+		</ol>
+	</div>
+
+	<h2>Classic structure elements</h2>
+	<div class="bunch">
+		
+		<div>block element for defning structure</div>
+		<span>inline (for text) element to define spans of text</span>
+	</div>
+	<h2>New structure elements</h2>
+	<div class="bunch">
+		<header>content</header>
+		<footer>content</footer>
+		<nav>
+			<li>navigation item</li>
+		</nav>
+		<section>content</section>
+		<article>content</article>
+	</div>
+
+
+	<script>
+	$('.bunch>*').wrap(function(){
+		return $('<div>').addClass('tag');
+	});
+
+	$('.tag').each(function(){
+		var $t=$(this);
+		$t.prepend($('<pre>').text($t.html().replace(/(^|>)\s*</g,'$1 <')));
+	});
+
+	</script>
+</body>
+</html>
