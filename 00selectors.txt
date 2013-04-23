@@ -1,0 +1,30 @@
+Selectors:
+
+---------
+
+tag selector:
+find all tags of name
+div {}
+
+class selector:
+find all tags that have this class
+.classname {}
+
+id selector
+find the element with this id
+#id {}
+
+mix - tag with class
+span.active {}
+
+---------
+
+[selector1] [selector2]
+find all elements matching selector2 in all elements matching selector1
+div li
+
+[selector1]>[selector2]
+find all elements matching selector2 that are children of any element matching selector1
+ul>li
+
+
