@@ -1,0 +1,21 @@
+/* in case I didn't tell you yet - use this whenever you do anything */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* 
+
+This task should help you check what you remember from the course.
+
+In this task you just have to recreate what you see in the picture.
+Some rules:
+1. You can (and should) modify the HTML file, but 
+   you are only allowed to add on div tag and some classes. 
+2. The whole thing is 960px wide. That's how it has to be ;)
+3. All the spacing has to stay the same
+4. It obviously has to be in the center on any size of the screen
+
+*/
+
+body {
+	color: rgba(0,0,0,0.5);
+}
+
