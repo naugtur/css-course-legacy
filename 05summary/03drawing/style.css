@@ -1,0 +1,11 @@
+/* in case I didn't tell you yet - use this whenever you do anything */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* 
+
+This task has two solutions:
+- one with just sizes and margins etc.
+- second with position:absolute
+
+*/
+
