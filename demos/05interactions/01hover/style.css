@@ -1,0 +1,11 @@
+.mousecatcher {
+    width: 100px;
+    overflow: visible;
+    border: 1px solid #fff;
+}
+.mousecatcher p {
+    display: none;
+}
+.mousecatcher:hover p {
+    display: block;
+}

@@ -1,0 +1,32 @@
+
+@media (min-width: 600px) {
+
+    .bigfatimage {
+
+        display: block;
+
+    }
+
+    .smallimage {
+
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bigfatimage {
+
+        display: none;
+
+    }
+
+    .smallimage {
+
+        display: block;
+
+    }
+
+}
