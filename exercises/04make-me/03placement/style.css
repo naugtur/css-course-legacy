@@ -1,0 +1,24 @@
+.mygrid {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: "the wheels on"
+                         "the bus go"
+                         "round round round";
+}
+
+.mygrid div {
+    border: 1px solid yellow;
+}
+
+.a {
+  grid-area: ;
+}
+
+.b {
+  grid-area: ;
+}
+
+.c {
+  grid-area: ;
+}

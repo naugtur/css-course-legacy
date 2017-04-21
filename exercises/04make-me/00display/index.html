@@ -1,67 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>CSS exercise</title>
     <meta charset="utf8" />
     <link href='http://fonts.googleapis.com/css?family=Combo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css" />
     <style>
-      body {
-        background-color: #333;
-        color: #fff;
-        font-family: "Combo", sans-serif;
-      }
-      #x-wrapper {
-        width: 960px;
-        height: 960px;
-        margin: 10px auto;
-      }
-      #x-wrapper>section {
-        width: 478px;
-        height: 100%;
-        float:left;
-      }
-      #x-wrapper>section.x-to{
-        width: 200px;
-        padding-left: 50px;
-      }
-      .hideMe{
-        color:darkred;
-      }
-      .x-from {
-        border-right: 1px dashed #777;
-        background: transparent url('todo.png') no-repeat 50px top;
-      }
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            background: #333 url('todo.png') no-repeat bottom center;
+            color: #fff;
+            font-family: "Combo", sans-serif;
+        }
+
+        .hideMe {
+            color: darkred;
+        }
     </style>
-  </head>
-  <body>
-    <div id="x-wrapper">
-      <section class="x-from"></section>
-      <section class="x-to">
+</head>
 
-      <div class="lalala">
+<body>
+
+
+    <div class="lalala">
         <ul>
-          <li> one</li>
-          <li> by one </li>
-          <li> in line </li>
+            <li> one</li>
+            <li> by one </li>
+            <li> in line </li>
         </ul>
-        <div class="whyAmISeparate">Lorem</div> ipsum dolor sit amet, consectetur adipisicing elit. Laudantium voluptatum quod quam ut soluta dolorem <span class="hideMe">MY SECRET SCREAMING CAPTION</span> doloribus culpa suscipit facere <span class="IwantMyLine">{ I want my line! }</span> blanditiis incidunt quaerat natus molestiae quasi quae cumque. Amet possimus.
-      </div>
-
-      </section>
+        <div class="whyAmISeparate">Lorem</div> ipsum dolor sit amet, consectetur adipisicing elit. Laudantium voluptatum quod quam ut soluta dolorem <span class="hideMe">MY SECRET SCREAMING CAPTION</span> doloribus culpa suscipit facere <span class="IwantMyLine">{ I want my line! }</span>        blanditiis incidunt quaerat natus molestiae quasi quae cumque. Amet possimus.
     </div>
 
 
-  </body>
+</body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
